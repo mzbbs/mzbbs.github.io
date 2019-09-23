@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>帽子社区</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" href="../static/layui/css/layui.css" /> -->
+     <!-- <script src="../static/layui/layui.js"></script> -->
+    <script src="//www.layuicdn.com/layui-v2.5.5/layui.js"></script>
+        <link rel="stylesheet" type="text/css" href="  https://www.layuicdn.com/layui-v2.5.5/css/layui.css" />
+</head>
+
+<body>
+<div class="layui-container fly-marginTop">
+<div class="layui-form layui-tab-content ">
+<form class="layui-form" action="" lay-filter="example">
+    <div class="layui-form-item" style="max-width: 420px">
+        <label class="layui-form-label">学号</label>
+        <div class="layui-input-block">
+            <input type="text" name="username" value="" lay-verify="title" autocomplete="off" placeholder="请输入学号" class="layui-input">
+
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">密码</label>
+        <div class="layui-input-block">
+            <input type="password" name="password" value="" placeholder="请输入密码" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">分区</label>
+        <div class="layui-input-block">
+            <select name="found" lay-filter="aihao">
+                <option value=""></option>
+                <option value="0">招领</option>
+                <option value="1">寻物</option>
+                <option value="2">灌水</option>
+                <option value="3">站务</option>
+                <option value="4">玩乐</option>
+            </select>
+        </div>
+    </div>
+
+    </div>
+
+<!--    <div class="layui-form-item">-->
+<!--        <label class="layui-form-label">开关</label>-->
+<!--        <div class="layui-input-block">-->
+<!--            <input type="checkbox" name="close" lay-skin="switch" lay-text="ON|OFF">-->
+<!--        </div>-->
+<!--    </div>-->
+
+    <div class="layui-form-item">
+        <label class="layui-form-label"></label>
+        <div class="layui-input-block">
+            <input type="radio" name="RadioButtonList1" value="学生" title="学生" checked="">
+            <input type="radio" name="RadioButtonList1" value="教师" title="教师">
+        </div>
+    </div>
+    <div class="layui-form-item layui-form-text">
+
+<!--        <div class="layui-input-block">-->
+            <input type="text" placeholder="标题" class="layui-input layui-form-danger" name="title" id="" maxlength="30">
+<!--        </div>-->
+    </div>
+    <div class="layui-form-item layui-form-text">
+        <label class="layui-form-label">内容</label>
+        <div class="">
+            <textarea placeholder="" class="layui-textarea" name="main" id="pattern" lay-verify="pattern" style="display:none"></textarea>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button type="button" class="layui-btn layui-btn-normal" id="LAY-component-form-getval">取消</button>
+
+            <button type="button" class="layui-btn" lay-submit="" lay-filter="demo1">立即提交</button>
+        </div>
+    </div>
+</form>
+</div>
+</div>
+
+<!-- <script src="//www.layuicdn.com/layui-v2.5.5/layui.js"></script> -->
+
+<script src="../static/add.js">
+             
+</script>
+<script src="../static/url.js">
+
+
+</script>
+</body>
+</html>
